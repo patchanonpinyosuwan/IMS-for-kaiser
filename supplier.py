@@ -42,7 +42,7 @@ class SupplierClass:
 
         # ==แถว1== #
         lbl_supplierid = Label(self.root, text="ID", font=("th sarabun psk", 15), bg="white").place(x=50, y=150)
-        lbl_name = Label(self.root, text="ชื่อ", font=("th sarabun psk", 15), bg="white").place(x=350, y=150)
+        lbl_name = Label(self.root, text="บริษัท", font=("th sarabun psk", 15), bg="white").place(x=350, y=150)
         lbl_contact = Label(self.root, text="ติดต่อ", font=("th sarabun psk", 15), bg="white").place(x=750, y=150)
 
         txt_supplierid = Entry(self.root, textvariable=self.var_eid_id, font=("th sarabun psk", 15), bg="lightyellow").place(x=150, y=150, width=180)
@@ -86,7 +86,7 @@ class SupplierClass:
         scrolly.config(command=self.SupplierTable.yview)
 
         self.SupplierTable.heading("eid", text="ID")
-        self.SupplierTable.heading("name", text="ชื่อ")
+        self.SupplierTable.heading("name", text="บริษัท")
         self.SupplierTable.heading("contact", text="ติดต่อ")
         self.SupplierTable.heading("email", text="อีเมล")
         self.SupplierTable.heading("product", text="สินค้าที่จัดจำหน่าย")
